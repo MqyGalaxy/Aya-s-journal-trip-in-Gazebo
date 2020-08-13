@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>寂静的幻想乡</title>
 <style type="text/css">
-body,td,th {
+a {
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
+
 @font-face {
     font-family: WenYue;
     src: url("font/WenYue-XinQingNianTi-NC-W8-1.otf")
@@ -15,19 +16,45 @@ body,td,th {
 		font-family: WenYue;
 		color: #fff;
 	}
+body,td,th {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
 body {
-    background-color: #2A2A2A;
-	color: #fff
+    background-color: #363636;
 }
 
-.top {
-    font-size: 16px;
-	color: #6C6C6C;
-	font-weight: ;
+.f1_dot_bg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url("img/e220175d777b571abf09bd549ab45f432883124f.png");
+  filter:brightness(80%);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center top;
+  opacity: 0.8;
+  background-color: rgba(0,0,0,0.35);
 }
+.about_f1_box{
+  color: #ffffff;
+}
+.l-inner.character-box{
+  padding: 70px 100px 185px;
+}
+.l-inner{
+  width: 1000px;
+  padding: 100px;
+  position: relative;
+  margin: 0 auto;
+  zoom: 1;
+}
+	
 .top ul{
     /* 清除ul标签的默认样式 */
-    width: auto;/*宽度也改为自动*/
+    width: 1000px;/*宽度也改为自动*/
     list-style-type: none;
     white-space:nowrap;
     overflow: hidden;
@@ -38,281 +65,66 @@ body {
 }
 .top li {
     float:left; /* 使li内容横向浮动，即横向排列  */
-	margin-right: 2%;
+    margin-right: 3%;
+    margin-left: 3%;  /* 两个li之间的距离*/
     position: relative;
     overflow: hidden;
 }
-.yya {
-    position: fixed;
-    left: 0;
-    background: rgba(26,26,26,1);
-    box-shadow: 0 1px 40px -8px rgba(0,0,0,.5);
-}
-.site-header {
-    width: 100%;
-    height: 75px;
-    /*background: 0 0;*/
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-} 
-a:link {
-    color: #FFC600;
-	text-decoration: none;
-	transition: all 0.3s ease;
-}
-a:visited {
-    color: #FFC600;
-}
-a:hover {
-    color: #FF8E00;
-}
-a:active {
-    color: #FFC600;
-}
-
-.site-content {
-    max-width: 1200px;
-    padding: 0 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(255,255,255,0);
-	margin-top: 79px; 
-}
-
-#newsBox {
-    padding-right: 25px;
-}
-.col {
-    display: block;
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-}
-@media (min-width: 768px)
-.span_12 {
-    width: 50%;
-}
-#newsBox h2, #pageBox h2 {
-    border-bottom: solid 4px #FFA600;
-    margin-bottom: 0px;
-	color: #FFA600;
-	font-size: 18px
-}
-#newsBox ul {
-    padding-top: 10px;
-}
-
-#newsBox ul, ol {
-    margin: 0;
-    padding: 0;
-}
-#newsBox ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-#newsBox li {
-    border-bottom: dotted 1px #f1e4cf;
-    padding: 15px 0;
-    font-size: 0.8rem;
-}
-#newsBox ol li, ul li, dt, dd {
-    line-height: 1.5em;
-    list-style-type: none;
-}
-#newsBox li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-#newsBox .day {
-    display: inline-block;
-    width: 100px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: #ff8c54;
-}
-
-#ul a:link {
-    color: #fff;
-	text-decoration: none;
-	transition: all 0.3s ease;
-}
-#ul a:visited {
-    color: #fff;
-}
-#ul a:hover {
-    color: #FF8E00;
-}
-#ul a:active {
-    color: #fff;
-}
-	
-.box_link_Download {
-    width: 300px;
-	height: 100px;
-	background-color: #7A7A7A;
-	border-radius: 50px;
-	border: #FFFFFF;
-	border-style: solid;
-	border-width: 5px;
-}
-/*箭头绘制*/
-    .down-arrow {            
-        width: 40px;            
-        height: 150px; 
-		position:absolute; 
-    }         
-    .down-arrow:after {            
-        content: '';            
-        display: block;            
-        width: 25px;            
-        height: 25px;            
-        border-right: 5px solid #fff;            
-        border-top: 5px solid #fff;            
-        -webkit-transform: rotate(135deg); /*箭头方向可以自由切换角度*/            
-        transform: rotate(135deg);
-    }
-/*箭头动态效果*/
-@-moz-keyframes myMove {
-  0% {padding-top:30px;}
-  100% {padding-top:50px;}
-}
-@-webkit-keyframes myMove {
-  0% {padding-top:30px;}
-  100% {padding-top:50px;}
-}
-@-o-keyframes myMove {
-  0% {padding-top:30px;}
-  100% {padding-top:50px;}
-}
-@keyframes myMove {
-  0% {padding-top:30px;}
-  100% {padding-top:50px;}
-}
-#down {
+	.top ul li{
+		display:inline-block;
+	}
+.link_box a {
+  display: block; 
+  color: #FFBA11;
+  text-decoration: none;
+  border: 2px solid #FFBA11;
+  border-radius: 30px;
   text-align: center;
-  height: 1px;
-  -moz-animation: myMove 2s linear infinite alternate; 
-  -webkit-animation: myMove 2s linear infinite alternate;
-  -o-animation: myMove 2s linear infinite alternate;
-  animation: myMove 2s linear infinite alternate;
+  line-height: 1em;
+  font-size: 20px;
+  padding: 11px 0;
+  letter-spacing: 0.05em;
+  font-family: "MetropolisRegular", sans-serif;
+  transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  width: 250px
+}
+.link_box a:hover{
+  background-color: #FFBA11;
+  color: #fff;
+}
+.sc_staff .staff_list1 .name {
+  font-size: 20px;
+  font-family: "NotoSans-bold", sans-serif;
+  line-height: 1.1em;
 }
 </style>
-
-<script>
-//页面滑动
-//滚动鼠标
-    var absHeight = $(window).height();    
-    var scrollTop = 0;
-    $(window).scroll(function () {
-        var st = $(window).scrollTop();
-        if (st > 0) {
-           $("#backToTop").css("display", "block");
-        } else {
-           $("#backToTop").css("display", "none");
-        }
-        //下滚且在第一屏
-        if (st > scrollTop && scrollTop === 0) {
-           $("html,body").animate({scrollTop : scrollTop + absHeight}, 1000);            
-        }
-        //上滚且在第二屏
-        if (st < scrollTop && scrollTop === absHeight) {
-           $("html,body").animate({scrollTop : scrollTop - absHeight}, 1000);             
-        }
-        //关键代码：判断鼠标中键的滚动方向
-        scrollTop = st;
-    });
-//点击图标
-    $("#backToTop").click(function () {
-        $("html,body").animate({scrollTop : absHeight}, 1000); 
-    });
-</script>
 </head>
 
 <body>
-	<nav>
-    <div class="top site-header yya" role="banner">
-	<p class="font" style="float: right; margin-right: 40px;"><span style="float: right; font-size: 20px;"><span style="color:#FFA600">射命丸</span>文<span style="color:#FFA600">的</span></span><br><span style="float: right; font-size: 30px"><span style="color:#FFA600">酉间坊</span>纪<span style="color:#FFA600">行</span></span></p>
-	<ul class="font" style="font-size: 20px" id="ul">
-			<a href="#"><li>情报</li></a>
-			<a href="#Download"><li>游戏详情</li></a>
-			<a href="#Video"><li>视频</li></a>
-			<a href="#About"><li>关于</li></a>
-	</ul>
-	</div>
-	<div class="site-top"></div>
-    </nav>
-	<div id="wrap">
-	   <div id="main">
-		<div>
-		<div class="site-content">
-		<div>
-		<img src="img/ab3f6d703e34b0c98c15320ba09e2c1a88c39f0f.jpg" style="width: 600px; height: auto; float: left; border-radius: 20px;">
-			<div class="col span_12" id="newsBox" style="width: 550px; float:left; margin-left: 20px;">
-	            <h2 class="font">NEWS 文文新闻</h2>
-	            <ul>
-                <li><span class="day">2020/8/8</span> 更新修复</li>
-                <li><span class="day">2020/8/4</span> 更新修复</li>
-			    <li><span class="day">2020/8/5</span> 第一次酉间坊摄影大赛</li>
-                <li><span class="day">2020/8/1</span> 《射命丸文的酉间坊纪行》截止至2020年8月1日已经完成了</li>
-                <li><span class="day">0/0/0</span> </li>
-                <li><span class="day">0/0/0</span> </li>
-                </ul>
-		    </div>
+	<div id="loading"></div>
+	<div class="f1_dot_bg" style="width:100%"><div style="font-size: 12px; width: 100%; position: absolute; text-align: center; bottom: 5px;">
+         <p style="color: #fff; text-align: center; font-size: 14px;">寂静的幻想乡<br>本网站并非为官方网站<br>目前仅作为参考使用<br>由 MqyGalaxy 制作</p>
+    </div></div>
+	<div class="l-inner character-box">
+		<div class="about_f1_box" style="text-align: center;">
+		     <p class="font" style="font-size: 50px; text-align: center;">这是一份来自<span style="color: #FFCE55">幻想乡</span>的档案</p>
 		</div>
-		<div style="width: 100%; float: left; margin-top: 40px;">
-			<ul style="width: 700px; float: left; text-align: center;">
-				<a href="#Download"><li class="box_link_Download" style="float:left; margin-right: 20px"><p class="font" style="font-size: 40px">游戏下载</p></li></a>
-				<a href="#Video"><li class="box_link_Download" style="float:left; margin-left: 20px"><p class="font" style="font-size: 40px">游戏视频</p></li></a>
+		<div class="top" style="text-align:center;">
+			<ul class="staff_list1" style="display:inline-block; vertical-align:top;">
+				<li class="link_box">
+					<p class="name"><a>寂静的故乡</a></p>
+				</li>
+				<li class="link_box">
+					<p class="name"><a>射命丸文的酉间坊纪行</a></p>
+				</li>
+				<li class="link_box">
+					<p class="name"><a>寂静的故乡-重制版-</a></p>
+				</li>
 			</ul>
-			<div style="border:5px solid #fff; border-right:none; border-top:none; border-bottom:none; height: 150px; float: left;">
-				<img src="img/loading.jpg" style="width: 50px; border-radius: 50px; margin-left: 20px;">
-				<p style="margin-left: 20px;">官方玩家群：439182576</p>
-				<p style="margin-left: 20px;">群里人都是车万大佬，说话又好听，超喜欢呆在这里的~<br>交流东方/寂静的故乡/酉间坊<del>（或者除了东方什么都聊）</del></p>
-			</div>	
-	    <div style="width: 20px; float:none; margin-top: 98px; margin-left: 50%;">
-			<div id="down"><div class="down-arrow" style="float: right"></div></div>
 		</div>
-		</div>
-		<div style="float: left;margin-top: 200px">
-			<div id="Download" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
-			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px">游戏详情</p>
-			<p>最新版本：Aya's journal trip in Gazebo v1.04</p>
-			<p>以往版本更新详情：<a href="about">更新内容</a></p>
-			<p>如果您拥有旧版本，在安装新版本时请删除旧版本<br>在更新新版本时，请先查看 <span style="font-weight: bold; color:#FFA600">重要更新内容</span>！以免发生不必要的意外</p>
-			<p class="font"><span style="font-size: 20px">百度云盘：</span><a href="https://pan.baidu.com/s/1TppGVaAOq0fsBlONjJYM3A" target="_blank" title="百度云盘下载">https://pan.baidu.com/s/1TppGVaAOq0fsBlONjJYM3A</a><br><span style="font-size: 20px">提取码：</span>ahm5</p>
-			<p class="font"><span style="font-size: 20px">OD盘连接：</span><a href="https://139x-my.sharepoint.cn/:u:/g/personal/lty139_139x_partner_onmschina_cn/EXafjdDGqzFAr7lw52eW5nQBa-VclKRlWTGgMLqsiIpTbg?e=5f5COx" target="_blank" title="OD盘下载">https://139x-my.sharepoint.cn/:u:/g/personal/lty139_139x_partner_onmschina_cn/EXafjdDGqzFAr7lw52eW5nQBa-VclKRlWTGgMLqsiIpTbg?e=5f5COx</a></p>
-			<p><span class="font">《射命丸文的酉间坊纪行》</span> 为免费游戏，谨防盗版不良资源</p>
-		  </div>
-		</div>
-		<div style="float: left;margin-top: 200px">
-			<div id="Video" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
-			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px">视频PV</p>
-			<iframe src="//player.bilibili.com/player.html?aid=201574614&bvid=BV1th411Z7e6&cid=218896143&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 1024px; height: 720px; border-radius: 20px;"> </iframe>
-		  </div>
-		</div>
-		<div style="float: left;margin-top: 200px;width: 100%">
-			<div id="About" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
-			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px;">关于</p>
-			<img src="img/about.png" alt="《射命丸文的酉间坊纪行》为 东方Project 的二次创作" width="1000px">
-			</div>
-		  </div>
-		</div>
-		</div>
-		<div style="float: left;margin-top: 200px; font-size: 14px; width:100%; text-align: center">
-			<p>射命丸文的酉间坊纪行 Demo</p>
-			<p>本网站由 MqyGalaxy 制作<br>本网站目前只用于参考，暂不作为官网使用</p>
-		</div>
-		</div>
-		</div>
-		</div>
-    </div>
-
+	</div>
 </body>
 </html>
