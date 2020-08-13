@@ -257,6 +257,56 @@ a:active {
 	</div>
 	<div class="site-top"></div>
     </nav>
+<link rel="stylesheet" href="css/aplayer/dist/APlayer.min.css">
+<div id="aplayer1" style="color: #000"></div>
+<script src="css/aplayer/dist/APlayer.min.js"></script>
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer1'),
+    fixed: true,
+	autoplay: true,
+	order:'list',
+	listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+	mutex: true,
+	volume: 0.7,
+    audio: [{
+		name: '少女が見た日本の原風景',
+        artist: '交響アクティブNEETs',
+        url: 'music/交響アクティブNEETs - 少女が見た日本の原風景.mp3',
+        cover: 'img/120px-東方フィルハーモニー交響楽団６_風_第一幕封面.jpg',
+		lrc: 'lrc1.lrc',
+        theme: '#FF8C00'
+        
+    },
+		{
+	    name: '妖怪の山 〜 Mysterious Mountain',
+        artist: '交響アクティブNEETs',
+        url: 'music/交響アクティブNEETs - 妖怪の山 〜 Mysterious Mountain.mp3',
+        cover: 'img/120px-東方フィルハーモニー交響楽団６_風_第一幕封面.jpg',
+		lrc: 'lrc1.lrc',
+        theme: '#FF8C00'
+    },
+		{
+	    name: '風神少女',
+        artist: '交響アクティブNEETs',
+        url: 'music/交響アクティブNEETs - 風神少女.mp3',
+        cover: 'img/120px-東方フィルハーモニー交響楽団５_花封面.jpg',
+		lrc: 'lrc1.lrc',
+        theme: '#FF0000'
+    },
+		{
+	    name: '少女秘封倶楽部',
+        artist: '交響アクティブNEETs',
+        url: 'music/交響アクティブNEETs - 少女秘封倶楽部.mp3',
+        cover: 'img/120px-東方フィルハーモニー交響楽団10_秘封面.jpg',
+		lrc: 'lrc1.lrc',
+        theme: '#1E90FF'
+    },
+		   ]
+});
+</script>
 	<div id="wrap">
 	   <div id="main">
 		<div>
@@ -312,6 +362,10 @@ a:active {
 			<div id="About" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
 			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px;">关于</p>
 			<img src="img/about.png" alt="《射命丸文的酉间坊纪行》为 东方Project 的二次创作" width="1000px">
+			<p class="font" style="font-size: 30px">关于网站</p>
+				<p>网站由 MqyGalaxy 制作，经过 FIND真心 作者允许作为官网</p>
+				<p>网站内包含的所有作品版权归属均为其原作者，本网站不会作为商业用途</p>
+				<p>网站寿命：“先开个1年看看，时不时整活”</p>
 			</div>
 		  </div>
 		</div>
@@ -325,7 +379,7 @@ a:active {
 		</div>
 		</div>
 		</div>
-    </div>
+
 
 </body>
 </html>
