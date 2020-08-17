@@ -17,7 +17,12 @@ body,td,th {
 	}
 body {
     background-color: #2A2A2A;
-	color: #fff
+	color: #fff;
+	background-image:url("img/QQ图片20200817071127.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .top {
@@ -252,61 +257,13 @@ a:active {
 			<a href="#"><li>情报</li></a>
 			<a href="#Download"><li>游戏详情</li></a>
 			<a href="#Video"><li>视频</li></a>
+		    <a href="#Music"><li>音乐</li></a>
 			<a href="#About"><li>关于</li></a>
 	</ul>
 	</div>
 	<div class="site-top"></div>
     </nav>
-<link rel="stylesheet" href="css/aplayer/dist/APlayer.min.css">
-<div id="aplayer1" style="color: #000"></div>
-<script src="css/aplayer/dist/APlayer.min.js"></script>
-<script>
-const ap = new APlayer({
-    container: document.getElementById('aplayer1'),
-    fixed: true,
-	autoplay: true,
-	order:'list',
-	listFolded: false,
-    listMaxHeight: 90,
-    lrcType: 3,
-	mutex: true,
-	volume: 0.7,
-    audio: [{
-		name: '少女が見た日本の原風景',
-        artist: '交響アクティブNEETs',
-        url: 'music/交響アクティブNEETs - 少女が見た日本の原風景.mp3',
-        cover: 'img/120px-東方フィルハーモニー交響楽団６_風_第一幕封面.jpg',
-		lrc: 'lrc1.lrc',
-        theme: '#FF8C00'
-        
-    },
-		{
-	    name: '妖怪の山 〜 Mysterious Mountain',
-        artist: '交響アクティブNEETs',
-        url: 'music/交響アクティブNEETs - 妖怪の山 〜 Mysterious Mountain.mp3',
-        cover: 'img/120px-東方フィルハーモニー交響楽団６_風_第一幕封面.jpg',
-		lrc: 'lrc1.lrc',
-        theme: '#FF8C00'
-    },
-		{
-	    name: '風神少女',
-        artist: '交響アクティブNEETs',
-        url: 'music/交響アクティブNEETs - 風神少女.mp3',
-        cover: 'img/120px-東方フィルハーモニー交響楽団５_花封面.jpg',
-		lrc: 'lrc1.lrc',
-        theme: '#FF0000'
-    },
-		{
-	    name: '少女秘封倶楽部',
-        artist: '交響アクティブNEETs',
-        url: 'music/交響アクティブNEETs - 少女秘封倶楽部.mp3',
-        cover: 'img/120px-東方フィルハーモニー交響楽団10_秘封面.jpg',
-		lrc: 'lrc1.lrc',
-        theme: '#1E90FF'
-    },
-		   ]
-});
-</script>
+
 	<div id="wrap">
 	   <div id="main">
 		<div>
@@ -356,6 +313,54 @@ const ap = new APlayer({
 			<div id="Video" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
 			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px">视频PV</p>
 			<iframe src="//player.bilibili.com/player.html?aid=201574614&bvid=BV1th411Z7e6&cid=218896143&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 1024px; height: 720px; border-radius: 20px;"> </iframe>
+		  </div>
+		</div>
+		<div style="float: left;margin-top: 200px">
+			<div id="Music" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
+			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px">音乐</p>
+			<p>感谢 车万石 为《射命丸文的酉间坊纪行》制作背景音乐</p>
+			<link rel="stylesheet" href="css/aplayer/dist/APlayer.min.css">
+<div id="aplayer1" style="color: #000; width: 700px"></div>
+<script src="css/aplayer/dist/APlayer.min.js"></script>
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer1'),
+	autoplay: true,
+	order:'list',
+	listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+	mutex: true,
+	volume: 0.7,
+    audio: [{
+		name: '醉意朦胧之晨（早上）',
+        artist: '车万石',
+        url: 'music/醉意朦胧之晨（早上）.mp3',
+        cover: 'img/醉意朦胧之晨.png',
+		lrc: 'lrc1.lrc',
+        theme: '#FF8C00'
+        
+    },
+		{
+	    name: '抚躁宁心之雨（雨天）',
+        artist: '车万石',
+        url: 'music/抚躁宁心之雨（雨天）.mp3',
+        cover: 'img/灯红酒绿之夜.png',
+		lrc: 'lrc1.lrc',
+        theme: '#FF8C00'
+    },
+		{
+	    name: '灯红酒绿之夜（晚上）',
+        artist: '车万石',
+        url: 'music/灯红酒绿之夜（晚上）.mp3',
+        cover: 'img/灯红酒绿之夜.png',
+		lrc: 'lrc1.lrc',
+        theme: '#FF0000'
+    },
+		   ]
+});
+</script>
+				<p>《射命丸文的酉间坊纪行》中使用的音乐所属版权均为原作者</p>
 		  </div>
 		</div>
 		<div style="float: left;margin-top: 200px;width: 100%">
