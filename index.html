@@ -2,27 +2,36 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>射命丸文的酉间坊纪行 ~ Aya's journal trip in Gazebo</title>
+<title>主页 - MyBlog</title>
+<link rel="icon" type="image/x-icon" href="images/blogLOGO2.png" />
 <style type="text/css">
 body,td,th {
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
-@font-face {
-    font-family: WenYue;
-    src: url("font/WenYue-XinQingNianTi-NC-W8-1.otf")
-}
-	.font {
-		font-family: WenYue;
-		color: #fff;
-	}
 body {
-    background-color: #2A2A2A;
-	color: #fff;
-	background-image:url("img/QQ图片20200817071127.png");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+    background-image: url();
+	background-repeat:no-repeat;
+	background-attachment:fixed;
 	background-size: cover;
+	background-color: #FFFFFF;
+	color: #6C6C6C;
+}
+a:link {
+    color: #FF7AD9;
+    text-decoration: none;
+	transition: all 0.3s ease;
+}
+a:visited {
+    color: #FF7AD9;
+    text-decoration: none;
+}
+a:active {
+    color: #FF7AD9;
+    text-decoration: none;
+}
+a:hover {
+    color: #53B6FF;
+    text-decoration: none;
 }
 
 .top {
@@ -43,14 +52,14 @@ body {
 }
 .top li {
     float:left; /* 使li内容横向浮动，即横向排列  */
-	margin-right: 2%;
+    margin-right:2%;  /* 两个li之间的距离*/
     position: relative;
     overflow: hidden;
 }
 .yya {
     position: fixed;
     left: 0;
-    background: rgba(26,26,26,1);
+    background: rgba(255,255,255,1);
     box-shadow: 0 1px 40px -8px rgba(0,0,0,.5);
 }
 .site-header {
@@ -63,32 +72,156 @@ body {
     z-index: 9999;
     top: 0;
 } 
-a:link {
-    color: #FFC600;
-	text-decoration: none;
-	transition: all 0.3s ease;
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-a:visited {
-    color: #FFC600;
-}
-a:hover {
-    color: #FF8E00;
-}
-a:active {
-    color: #FFC600;
+.site-top {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.site-content {
-    max-width: 1200px;
+	.gonggao{
+	padding: 1px;
+    border: 1px dashed #e6e6e6;
+    color: #969696;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: #fbfbfb50;
+    border-radius: 10px;
+	}
+	.site-content {
+    max-width: 800px;
     padding: 0 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(255,255,255,0);
-	margin-top: 79px; 
+    background-color: rgba(255,255,255,.8);
+}
+.post-list-show {
+    animation: post-list-show .5s;
+    -webkit-animation: post-list-show .5s;
+    opacity: 1;
+}
+.post-list-thumb {
+    float: left;
+    width: 100%;
+    height: 230px;
+    position: relative;
+    margin: 20px 0 20px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 1px 20px -8px rgba(0,0,0,.9);
+    /*opacity: 0;*/
+}/*表格*/
+.post-thumb {
+    float: left;
+    width: 50%;
+}/*图片*/
+.post-thumb2 {
+    float: right;
+    width: 50%;
+}/*图片*/
+.post-content-wrap {
+    position: relative;
+    display: inline-block;
+    float: right;
+    padding-right: 30px;
+    padding-left: 0;
+    width: 40%;
+    margin: 20px 10px 0 10px;
+}/*内容*/
+.post-content-wrap2 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding-right: 30px;
+    padding-left: 0;
+    width: 40%;
+    margin: 20px 10px 0 10px;
+}/*内容*/
+	
+.grad {
+  height: 200px;
+  background-image: linear-gradient(to right, #FF7AD9, #53B6FF);
+}
+/*图片缩放*/
+.box-img {
+	height:300px; width:400px;
+}
+.cover-img {
+	max-width:100%;max-height:100%;background-size:cover;background-position:50%;border-radius: 10px;
+}
+
+/*使用了黑幕css样式，转载自萌娘百科https://zh.moegirl.org/MediaWiki:Common.css感谢萌娘百科，程序员手打辛苦了！！！*/
+.heimu,
+.heimu a,
+a .heimu,
+.heimu a.new {
+    background-color: #252525;
+    color: #252525;
+    text-shadow: none;
+}
+body:not(.heimu_toggle_on) .heimu:hover,
+body:not(.heimu_toggle_on) .heimu:active,
+body:not(.heimu_toggle_on) .heimu.off {
+    transition: color .13s linear;
+    color: white;
+}
+body:not(.heimu_toggle_on) .heimu:hover a,
+body:not(.heimu_toggle_on) a:hover .heimu,
+body:not(.heimu_toggle_on) .heimu.off a,
+body:not(.heimu_toggle_on) a:hover .heimu.off {
+    transition: color .13s linear;
+    color: lightblue;
+}
+body:not(.heimu_toggle_on) .heimu.off .new,
+body:not(.heimu_toggle_on) .heimu.off .new:hover,
+body:not(.heimu_toggle_on) .new:hover .heimu.off,
+body:not(.heimu_toggle_on) .heimu.off .new,
+body:not(.heimu_toggle_on) .heimu.off .new:hover,
+body:not(.heimu_toggle_on) .new:hover .heimu.off {
+    transition: color .13s linear;
+    color: #BA0000;
+	}
+
+/*头图*/
+.f1_dot_bg{
+	margin-top: 75px;
+    background: url("images/74045357_p0.png") top center no-repeat;
+    background-size: cover;
+    height: 400px;
+
+}
+
+.request {
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    margin-left: -154px;
+    display: block;
+    width: 308;
+    height: 107;
+    background-color: #fc7eab;
+    border: solid 5px #fff;
+    border-radius: 65px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 #newsBox {
     padding-right: 25px;
+}
+#pageBox {
+    padding-left: 25px;
+}
+#newsBox, #pageBox {
+    padding-top: 50px;
 }
 .col {
     display: block;
@@ -101,9 +234,9 @@ a:active {
     width: 50%;
 }
 #newsBox h2, #pageBox h2 {
-    border-bottom: solid 4px #FFA600;
+    border-bottom: solid 4px #fc7eab;
     margin-bottom: 0px;
-	color: #FFA600;
+	color: #fc7eab;
 	font-size: 18px
 }
 #newsBox ul {
@@ -142,259 +275,242 @@ a:active {
     font-weight: bold;
     color: #ff8c54;
 }
+.mainBox {
+    width: 960px;
+    margin: auto;
+    padding: 0 0 0 0;
+}
+@media screen and (min-width: 0px)
+.pageBox .mainBox, .pageBox .sideBox {
+    position: relative;
+}
+.span_12 {
+    width: 50%;
+}
 
-#ul a:link {
-    color: #fff;
-	text-decoration: none;
-	transition: all 0.3s ease;
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+    box-sizing: border-box;
 }
-#ul a:visited {
-    color: #fff;
+.articleArea {
+    margin-left: 18px;
+    margin-top: -8px;
+    margin-right: 18px;
 }
-#ul a:hover {
-    color: #FF8E00;
+.articleList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-pack: justify;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 25px;
 }
-#ul a:active {
-    color: #fff;
+figure {
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+    -moz-box-shadow: 0px 6px 20px -5px rgba(211, 213, 248, 1);
+    -webkit-box-shadow: 0px 6px 20px -5px rgba(211, 213, 248, 1);
+    -ms-box-shadow: 0px 6px 20px -5px rgba(211, 213, 248, 1);
+    box-shadow: 0px 6px 20px -5px rgba(211, 213, 248, 1);
 }
-	
-.box_link_Download {
-    width: 300px;
-	height: 100px;
-	background-color: #7A7A7A;
-	border-radius: 50px;
-	border: #FFFFFF;
-	border-style: solid;
-	border-width: 5px;
+figure {
+    margin: 0;
 }
-.box_link_Page {
-    width: 200px;
-	height: 50px;
-	background-color: #E89000;
-	border-radius: 20px;
-	border: #FFFFFF;
-	border-style: solid;
-	border-width: 3px;
+	figure {
+		display: block
+	}
+.articleList .image {
+    width: 100%;
 }
-.box_link_wiki {
-    width: 200px;
-	height: 40px;
-	background-color: #E89000;
-	border-radius: 20px;
+.articleArea div {
+    line-height: 1.3;
 }
-/*箭头绘制*/
-    .down-arrow {            
-        width: 40px;            
-        height: 150px; 
-		position:absolute; 
-    }         
-    .down-arrow:after {            
-        content: '';            
-        display: block;            
-        width: 25px;            
-        height: 25px;            
-        border-right: 5px solid #fff;            
-        border-top: 5px solid #fff;            
-        -webkit-transform: rotate(135deg); /*箭头方向可以自由切换角度*/            
-        transform: rotate(135deg);
-    }
-/*箭头动态效果*/
-@-moz-keyframes myMove {
-  0% {padding-top:30px;}
-  100% {padding-top:50px;}
+.articleList .info {
+    position: relative;
+    padding: 21px 19px 43px;
 }
-@-webkit-keyframes myMove {
-  0% {padding-top:30px;}
-  100% {padding-top:50px;}
+.articleList .info {
+    padding: 20px;
 }
-@-o-keyframes myMove {
-  0% {padding-top:30px;}
-  100% {padding-top:50px;}
+.articleList a .info::before {
+    bottom: 22px;
+    right: 22px;
+    width: 37px;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: cubic-bezier(.31,-.105,.43,1.59);
+    transition-timing-function: cubic-bezier(.31,-.105,.43,1.59);
 }
-@keyframes myMove {
-  0% {padding-top:30px;}
-  100% {padding-top:50px;}
+#news .articleList a .info::after {
+    bottom: 30px;
+    right: 19px;
+    width: 24px;
+    transform: rotate(45deg);
 }
-#down {
-  text-align: center;
-  height: 1px;
-  -moz-animation: myMove 2s linear infinite alternate; 
-  -webkit-animation: myMove 2s linear infinite alternate;
-  -o-animation: myMove 2s linear infinite alternate;
-  animation: myMove 2s linear infinite alternate;
+.newsEntry {
+    position: relative;
 }
+.articleList .entryMeta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.articleList li.anime .category {
+    border-color: #4fade9;
+    color: #4fade9;
+}
+.articleList li.Life .category {
+    border-color: #47d275;
+    color: #47d275;
+}
+.articleList .category {
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    color: #b9b9b9;
+    border: 2px solid #b9b9b9;
+    border-radius: 1em;
+    padding: 4px 20px 2px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: bold;
+}
+.articleList time {
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    color: #b2b2b2;
+}
+figcaption {
+    overflow: hidden;
+    display: -webkit-box;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.articleList li figure a {
+    color: #6c6c6c;
+}
+.articleList .info {
+    position: relative;
+    padding: 21px 19px 43px;
+}
+.articleList li {
+    padding: 0 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 33.33%;
+}
+.articleList .image img {
+    width: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.articleList .image img {
+    border-style: none;
+	overflow: hidden; 
+}
+			.articleList img:hover{
+				transform: scale(1.08);
+			}
+
 </style>
-
-<script>
-//页面滑动
-//滚动鼠标
-    var absHeight = $(window).height();    
-    var scrollTop = 0;
-    $(window).scroll(function () {
-        var st = $(window).scrollTop();
-        if (st > 0) {
-           $("#backToTop").css("display", "block");
-        } else {
-           $("#backToTop").css("display", "none");
-        }
-        //下滚且在第一屏
-        if (st > scrollTop && scrollTop === 0) {
-           $("html,body").animate({scrollTop : scrollTop + absHeight}, 1000);            
-        }
-        //上滚且在第二屏
-        if (st < scrollTop && scrollTop === absHeight) {
-           $("html,body").animate({scrollTop : scrollTop - absHeight}, 1000);             
-        }
-        //关键代码：判断鼠标中键的滚动方向
-        scrollTop = st;
-    });
-//点击图标
-    $("#backToTop").click(function () {
-        $("html,body").animate({scrollTop : absHeight}, 1000); 
-    });
-</script>
 </head>
 
-<body>
-	<nav>
-    <div class="top site-header yya" role="banner">
-	<p class="font" style="float: right; margin-right: 40px;"><span style="float: right; font-size: 20px;"><span style="color:#FFA600">射命丸</span>文<span style="color:#FFA600">的</span></span><br><span style="float: right; font-size: 30px"><span style="color:#FFA600">酉间坊</span>纪<span style="color:#FFA600">行</span></span></p>
-	<ul class="font" style="font-size: 20px" id="ul">
-			<a href="#"><li>情报</li></a>
-			<a href="#Download"><li>游戏详情</li></a>
-			<a href="#Video"><li>视频</li></a>
-		    <a href="#Music"><li>音乐</li></a>
-			<a href="#About"><li>关于</li></a>
+<body link="#FF7AD9" vlink="#FF7AD9" alink="#FF7AD9" leftmargin= "0 " topmargin= "0 " marginwidth= "0 " marginheight= "0 ">
+<nav>
+  <div class="top site-header no-select yya" role="banner">
+	<img src="images/blogLOGO.png" width="230" style="float:right">
+	<ul>
+			<a href="index.html"><li>温馨小窝</li></a>
+			<a href="recommend.html"><li>番剧游戏</li></a>
+			<a href="video.html"><li>窝の视频</li></a>
+			<a href="about.html"><li>关于MyBlog</li></a>
+		    <a href="https://github.com/MqyGalaxy/MqyGalaxy.github.io" target="_blank"><li>Github</li></a>
 	</ul>
 	</div>
 	<div class="site-top"></div>
-    </nav>
+</nav>
+<div class="f1_dot_bg">
+<a class="request" href="index.html"><img src="images/blogLOGO4.png" width="308px" height="107"></a>
+</div>
+<div style="background:rgba(255,255,255,1);width: auto;height:auto;">
+<div class="mainBox" style="margin-bottom: 40px;">
+	<div class="col span_12" id="newsBox">
+	<h2>update 更新动态</h2>
+	<ul>
+<li><span class="day">2020/8/1</span> 《结城友奈是勇者》第三季制作决定！</li>
+<li><span class="day">0/0/0</span> </li>
+<li><span class="day">0/0/0</span> </li>
+<li><span class="day">0/0/0</span> </li>
+<li><span class="day">0/0/0</span> </li>
+</ul></div>
+	<div class="col span_12" id="pageBox">
+	<h2>news 公告</h2>
+	<article class="post post-list-show post-list-thumb">
+	  <div style="margin-left: 20px; margin-right: 20px;">
+		  <p style="font-size: 24px; color: #747474; font-weight: bold;">七夕节快乐？！</p>
+			<p style="color: #C4C4C4; font-size: 12px;">▶ 2020-8-25</p>
+		  <p style="color: #6C6C6C">七夕了，谁来和我说个晚安（我早晚安排人来弄——开个玩笑）<br><strong>网站正在设计，目前作为测试使用</strong></p>
+      </div>
+	</article>
+	</div>
+  </div>
+</div>
 
-	<div id="wrap">
-	   <div id="main">
-		<div>
-		<div class="site-content">
-		<div>
-		<img src="img/ab3f6d703e34b0c98c15320ba09e2c1a88c39f0f.jpg" style="width: 600px; height: auto; float: left; border-radius: 20px;">
-			<div class="col span_12" id="newsBox" style="width: 550px; float:left; margin-left: 20px;">
-	            <h2 class="font">NEWS 文文新闻</h2>
-	            <ul id="ul">
-				<a href="page-20200822.html"><li><span class="day">2020/8/22</span> 群内提问与作者的回答 [1]</li></a>
-				<a href="page-20200817.html"><li><span class="day">2020/8/17</span> 更新修复</li></a>
-                <a href="page-20200808.html"><li><span class="day">2020/8/8</span> [重要] 更新修复</li></a>
-				<a href="page-20200805.html"><li><span class="day">2020/8/5</span> 第一次酉间坊摄影大赛</li></a>
-                </ul>
-			<a href="news.html"><div class="box_link_Page font" style="margin-top: 20px; font-size: 35px; text-align: center">更多新闻</div></a>
-		</div>
-		<div style="width: 100%; float: left; margin-top: 40px;">
-			<ul style="width: 700px; float: left; text-align: center;">
-				<a href="#Download"><li class="box_link_Download" style="float:left; margin-right: 20px"><p class="font" style="font-size: 40px">游戏下载</p></li></a>
-				<a href="#Video"><li class="box_link_Download" style="float:left; margin-left: 20px"><p class="font" style="font-size: 40px">游戏视频</p></li></a>
-			</ul>
-			<div style="border:5px solid #fff; border-right:none; border-top:none; border-bottom:none; height: 150px; float: left;">
-				<img src="img/loading.jpg" style="width: 50px; border-radius: 50px; margin-left: 20px;">
-				<p style="margin-left: 20px;">官方玩家群：439182576</p>
-				<p style="margin-left: 20px;">群里人都是车万大佬，说话又好听，超喜欢呆在这里的~<br>交流东方/寂静的故乡/酉间坊<del>（或者除了东方什么都聊）</del></p>
-			</div>	
-	    <div style="width: 20px; float:none; margin-top: 98px; margin-left: 50%;">
-			<div id="down"><div class="down-arrow" style="float: right"></div></div>
-		</div>
-		</div>
-		<div style="float: left;margin-top: 200px">
-			<div id="Download" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
-			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px">游戏详情</p>
-			<p>最新版本：<span class="font">Aya's journal trip in Gazebo v1.05</span></p>
-			<p><span class="font">《射命丸文的酉间坊纪行》</span>已经于 <a href="page-20200817.html" title="更新详情">2020年8月17日23时</a> 更新，请重新下载游戏</p>
-			<p>如果您拥有旧版本，在安装新版本时请删除旧版本<br>如有需求，请在删除前备份照片文件夹<br>在更新新版本时，请先查看 <span style="font-weight: bold; color:#FFA600">重要更新内容</span>！以免发生不必要的意外</p>
-			<p class="font"><span style="font-size: 20px">百度云盘：</span><a href="https://pan.baidu.com/s/1jgm-gDeFiEsuumP4YVtf9w" target="_blank" title="百度云盘下载">https://pan.baidu.com/s/1jgm-gDeFiEsuumP4YVtf9w</a><br><span style="font-size: 20px">提取码：</span>quen</p>
-			<p class="font"><span style="font-size: 20px">OD盘连接：</span><a href="https://139x-my.sharepoint.cn/:u:/g/personal/lty139_139x_partner_onmschina_cn/EfHIgAY6if1MvgoCpmSj3moBVXxthuIQ_GqONtYbu7AJBw?e=dihkYH" target="_blank" title="OD盘下载">https://139x-my.sharepoint.cn/:u:/g/personal/lty139_139x_partner_onmschina_cn/EfHIgAY6if1MvgoCpmSj3moBVXxthuIQ_GqONtYbu7AJBw?e=dihkYH</a></p>
-			<h2>声明</h2>
-			<p><span class="font">《射命丸文的酉间坊纪行》</span> 为免费游戏，谨防盗版不良资源</p>
-			<p>本游戏中出现的一切模型，故事原型，美术素材，音乐素材，版权均属于原作者所有</p>
-			<p>《射命丸文的酉间坊纪行》是热心市民封兽鵺之前独自制作的UE4 PC端单机射击游戏《寂静的故乡》的前传，讲述了《寂静的故乡》的故事发生之前的故事。FIND真心加入后，和热心市民封兽鵺共同完善了世界观和故事线，重写了《寂静的故乡》的剧情内容，所以《射命丸文的酉间坊纪行》的世界观虽然与《寂静的故乡》大致相关，但是内容完全不同，剧情完全无法衔接。</p>
-			<p>《射命丸文的酉间坊纪行》是热心市民封兽鵺和FIND真心用来测试技术，巩固框架而诞生的试验性作品，鵺酱心酱制作委员会将不会在《射命丸文的酉间坊纪行》上浪费过多精力和时间。在《射命丸文的酉间坊纪行》完成后，将投入新游戏《寂静的故乡》重置版的制作工作，重置版将基于《射命丸文的酉间坊纪行》的世界观重新设计制作，并且顺便完善《寂静的故乡》的系统。</p>
-			
-			<div class="box_link_wiki font" style="float: left; text-align: center; line-height:42px; font-size: 20px;"><span>射命丸文的随身记事本</span></div>
-			<div style="float: left">
-			<a href="https://thwiki.cc/%E5%B0%84%E5%91%BD%E4%B8%B8%E6%96%87%E7%9A%84%E9%85%89%E9%97%B4%E5%9D%8A%E7%BA%AA%E8%A1%8C" target="_blank"><img src="https://thwiki.cc/banner/banner_b1.png" style="margin-left: 20px; width: 200px;border-radius: 20px" title="射命丸文的酉间坊纪行 - THBwiki"></a></div>
+  <div style="width: 100%; display: block;clear: both;">
+	  <div style="background:rgba(255,192,203,1);width: auto;height:auto;">
+	  <section>
+		  <div class="inner">
+			  <h2 style="color:#FFFFFF"><img src="images/NEW PAGES.png" alt="NEW PAGES"></h2>
+			  <div class="articleArea">
+				  <ul class="articleList">
+					  <li class="anime"><figure><a href="page2.html"><div class="image"><img src="https://s1.ax1x.com/2020/08/09/aoNBZQ.md.jpg" alt="新番杂谈"></div><div class="info"><div class="newsEntry"><div class="entryMeta"><span class="category">ANIME</span><time>2020.07.27</time></div><figcaption>刀剑神域被喷？为什么好番无人观看？</figcaption></div></div></a></figure></li>
+					  <li class="Life"><figure><a href="page1.html"><div class="image"><img src="images/微信图片_20200713125230.jpg" alt="毕业寄语"></div><div class="info"><div class="newsEntry"><div class="entryMeta"><span class="category">LIFE</span><time>2020.07.13</time></div><figcaption>毕业寄语</figcaption></div></div></a></figure></li>
+					  <li class="anime"><figure><a href="new1.html"><div class="image"><img src="images/74045357_p0.png" alt="新番杂谈"></div><div class="info"><div class="newsEntry"><div class="entryMeta"><span class="category">ANIME</span><time>2020.07</time></div><figcaption>2020年7月新番</figcaption></div></div></a></figure></li>
+				  </ul>
+			  </div>
 		  </div>
-		</div>
-		<div style="float: left;margin-top: 200px">
-			<div id="Video" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
-			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px">视频PV</p>
-			<iframe src="//player.bilibili.com/player.html?aid=201574614&bvid=BV1th411Z7e6&cid=218896143&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 1024px; height: 720px; border-radius: 20px;"> </iframe>
-		  </div>
-		</div>
-		<div style="float: left;margin-top: 200px">
-			<div id="Music" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
-			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px">音乐</p>
-			<p>感谢 车万石 为《射命丸文的酉间坊纪行》制作背景音乐</p>
-			<link rel="stylesheet" href="css/aplayer/dist/APlayer.min.css">
-<div id="aplayer1" style="color: #000; width: 700px"></div>
-<script src="css/aplayer/dist/APlayer.min.js"></script>
-<script>
-const ap = new APlayer({
-    container: document.getElementById('aplayer1'),
-	autoplay: true,
-	order:'list',
-	listFolded: false,
-    listMaxHeight: 90,
-    lrcType: 3,
-	mutex: true,
-	volume: 0.7,
-    audio: [{
-		name: '醉意朦胧之晨（早上）',
-        artist: '车万石',
-        url: 'music/醉意朦胧之晨（早上）.mp3',
-        cover: 'img/醉意朦胧之晨.png',
-		lrc: 'lrc1.lrc',
-        theme: '#FF8C00'
-        
-    },
-		{
-	    name: '抚躁宁心之雨（雨天）',
-        artist: '车万石',
-        url: 'music/抚躁宁心之雨（雨天）.mp3',
-        cover: 'img/灯红酒绿之夜.png',
-		lrc: 'lrc1.lrc',
-        theme: '#FF8C00'
-    },
-		{
-	    name: '灯红酒绿之夜（晚上）',
-        artist: '车万石',
-        url: 'music/灯红酒绿之夜（晚上）.mp3',
-        cover: 'img/灯红酒绿之夜.png',
-		lrc: 'lrc1.lrc',
-        theme: '#FF0000'
-    },
-		   ]
-});
-</script>
-				<p>《射命丸文的酉间坊纪行》中使用的音乐所属版权均为原作者</p>
-		  </div>
-		</div>
-		<div style="float: left;margin-top: 200px;width: 100%">
-			<div id="About" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
-			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px;">关于</p>
-			<img src="img/about.png" alt="《射命丸文的酉间坊纪行》为 东方Project 的二次创作" width="1000px">
-			<p class="font" style="font-size: 30px">关于网站</p>
-				<p>网站由 MqyGalaxy 制作，经过 FIND真心 作者允许作为官网</p>
-				<p>网站内包含的所有作品版权归属均为其原作者，本网站不会作为商业用途</p>
-				<p>网站寿命：“先开个1年看看，时不时整活”</p>
-			</div>
-		  </div>
-		</div>
-		</div>
-		<div style="float: left;margin-top: 200px; font-size: 14px; width:100%; text-align: center">
-			<p>射命丸文的酉间坊纪行 Demo</p>
-			<p>本网站由 MqyGalaxy 制作<br>已经过 FIND真心 作者检阅后作为官网使用</p>
-			<hr width="200px">
-			<p><a title="暂无页面">寂静的故乡</a> · <a href="index.html">射命丸文的酉间坊纪行</a> · <a href="https://thwiki.cc/%E5%B0%84%E5%91%BD%E4%B8%B8%E6%96%87%E7%9A%84%E9%85%89%E9%97%B4%E5%9D%8A%E7%BA%AA%E8%A1%8C" title="射命丸文的酉间坊纪行">THBwiki</a> · <a href="https://t.bilibili.com/420993738034685531?tab=2" title="热心市民封兽鵺">bilibili</a></p>
-		</div>
-		</div>
-		</div>
-		</div>
+	  </section>
+	  </div>
+  </div>
 
-
+<div style="background:rgba(255,255,255,1);width: auto;height:auto;">
+  <footer>
+	<div style="clear：both;">
+	<p style="text-align: center; font-size: 10px; color: #BCBCBC;">MqyGalaxyBlog(MyBlog) 由 MqyGalaxy 制作<br>参考主题 Sakura by Mashiro<br>本网站没有任何商业用途，所使用的音视频都是为了增加视听体验<br>网站内容修改与建议请联系邮箱 2412083655@qq.com<br><br>感谢与您相见~</vr></p>	
+	</div>
+  </footer>
+</div>
 </body>
 </html>
