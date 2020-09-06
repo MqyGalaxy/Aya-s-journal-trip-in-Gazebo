@@ -223,6 +223,33 @@ a:active {
   -o-animation: myMove 2s linear infinite alternate;
   animation: myMove 2s linear infinite alternate;
 }
+	
+        .black_overlay{ 
+            display: none; 
+            position: absolute; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 100%; 
+            background-color: black; 
+            z-index:1001; 
+            -moz-opacity: 0.8; 
+            opacity:.80; 
+            filter: alpha(opacity=88); 
+        } 
+        .white_content { 
+            display: none; 
+            position: absolute; 
+            top: 25%; 
+            left: 25%; 
+            width: 55%; 
+            height: 55%; 
+            padding: 20px; 
+            border: 10px solid orange; 
+            background-color: white; 
+            z-index:1002; 
+            overflow: auto; 
+        } 
 </style>
 
 <script>
@@ -253,14 +280,22 @@ a:active {
         $("html,body").animate({scrollTop : absHeight}, 1000); 
     });
 </script>
+   <script>
+      $(".f_top").click(function(){
+         $("html,body").animate({
+            'scrollTop':'0'
+         },300);
+      });
+   </script>
 </head>
 
 <body>
+	<div id="header">我是顶部~</div>
 	<nav>
     <div class="top site-header yya" role="banner">
 	<p class="font" style="float: right; margin-right: 40px;"><span style="float: right; font-size: 20px;"><span style="color:#FFA600">射命丸</span>文<span style="color:#FFA600">的</span></span><br><span style="float: right; font-size: 30px"><span style="color:#FFA600">酉间坊</span>纪<span style="color:#FFA600">行</span></span></p>
 	<ul class="font" style="font-size: 20px" id="ul">
-			<a href="#"><li>情报</li></a>
+			<a href="#header"><li>情报</li></a>
 			<a href="#Download"><li>游戏详情</li></a>
 			<a href="#Video"><li>视频</li></a>
 		    <a href="#Music"><li>音乐</li></a>
@@ -275,7 +310,7 @@ a:active {
 		<div>
 		<div class="site-content">
 		<div>
-		<img src="img/ab3f6d703e34b0c98c15320ba09e2c1a88c39f0f.jpg" style="width: 600px; height: auto; float: left; border-radius: 20px;">
+		<img src="img/ab3f6d703e34b0c98c15320ba09e2c1a88c39f0f.jpg" style="width: 600px; height: auto; float: left; border-radius: 20px;"></div>
 			<div class="col span_12" id="newsBox" style="width: 550px; float:left; margin-left: 20px;">
 	            <h2 class="font">NEWS 文文新闻</h2>
 	            <ul id="ul">
@@ -325,7 +360,7 @@ a:active {
 			<div id="Video" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
 			<div style="float: left;margin-top: 76px"><p class="font" style="font-size: 40px">视频PV</p>
 			<iframe src="//player.bilibili.com/player.html?aid=201574614&bvid=BV1th411Z7e6&cid=218896143&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 1024px; height: 720px; border-radius: 20px;"> </iframe>
-		  </div>
+		    </div>
 		</div>
 		<div style="float: left;margin-top: 200px">
 			<div id="Music" style="float:left; border:5px solid #fff; border-right:none; border-left:none; border-top:none; height: 10px; width: 100px;"></div>
