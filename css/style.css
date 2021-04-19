@@ -186,7 +186,10 @@ a:hover {
   #newsBox {
     width: 100%;
   }
-  #img-1 {
+  .cover,
+  .cover2,
+  #img-1,
+  #img-3 {
     display: none;
   }
 }
