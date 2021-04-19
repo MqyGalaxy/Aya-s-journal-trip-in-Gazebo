@@ -182,6 +182,14 @@ a:hover {
   width: 50%;
   float: left;
 }
+@media only screen and (max-width: 900px) {
+  #newsBox {
+    width: 100%;
+  }
+  #img-1 {
+    display: none;
+  }
+}
 #newsBox a {
   color: #fff;
   text-decoration: none;
