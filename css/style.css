@@ -285,7 +285,7 @@ dd {
   transition: all 0.3s ease;
 }
 .vdo-zhezhao:hover {
-  background: rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.3);
   color: #fff;
 }
 video {
@@ -294,6 +294,7 @@ video {
 .footer {
   background: #424242;
   width: 100%;
+  color: #a9a9a9;
 }
 #footer {
   padding: 1.25em;
@@ -659,6 +660,15 @@ pre {
   border-radius: 5px;
   overflow: hidden;
 }
+.post-archive li {
+  background: #151515;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+.post-archive li:hover {
+  background: #686868;
+  transition: all 0.3s ease;
+}
 .post-archive .post-item {
   margin: 5px 0 5px 0;
 }
@@ -666,6 +676,7 @@ pre {
   display: inline-block;
   margin-right: 10px;
   color: #fff;
+  font-family: WenYue;
 }
 .post-archive .post-item .inbox-aside {
   color: #ffc600;
