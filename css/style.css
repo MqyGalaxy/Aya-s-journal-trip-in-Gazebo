@@ -57,6 +57,9 @@ a:hover {
   font-family: WenYue;
   color: #fff;
 }
+#font-Bender {
+  font-family: Bender;
+}
 .header {
   position: fixed;
   width: 100%;
@@ -1283,5 +1286,84 @@ a {
     transform: scale(1);
     -webkit-transform: scale(1);
     opacity: 0;
+  }
+}
+.down-arrow {
+  width: 40px;
+  height: 150px;
+  position: absolute;
+}
+.down-arrow:after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-right: 5px solid #fff;
+  border-top: 5px solid #fff;
+  -webkit-transform: rotate(135deg); /*箭头方向可以自由切换角度*/
+  transform: rotate(135deg);
+}
+@-moz-keyframes myMove {
+  0% {
+    padding-top: 30px;
+  }
+  100% {
+    padding-top: 50px;
+  }
+}
+@-webkit-keyframes myMove {
+  0% {
+    padding-top: 30px;
+  }
+  100% {
+    padding-top: 50px;
+  }
+}
+@-o-keyframes myMove {
+  0% {
+    padding-top: 30px;
+  }
+  100% {
+    padding-top: 50px;
+  }
+}
+#down {
+  text-align: center;
+  height: 1px;
+  -moz-animation: myMove 2s linear infinite alternate;
+  -webkit-animation: myMove 2s linear infinite alternate;
+  -o-animation: myMove 2s linear infinite alternate;
+  animation: myMove 2s linear infinite alternate;
+}
+@-moz-keyframes myMove {
+  0% {
+    padding-top: 30px;
+  }
+  100% {
+    padding-top: 50px;
+  }
+}
+@-webkit-keyframes myMove {
+  0% {
+    padding-top: 30px;
+  }
+  100% {
+    padding-top: 50px;
+  }
+}
+@-o-keyframes myMove {
+  0% {
+    padding-top: 30px;
+  }
+  100% {
+    padding-top: 50px;
+  }
+}
+@keyframes myMove {
+  0% {
+    padding-top: 30px;
+  }
+  100% {
+    padding-top: 50px;
   }
 }
