@@ -440,10 +440,10 @@ video {
   color: #ffc600;
 }
 .post-content h1 {
-  font-size: 1.2em;
+  font-size: 1.8em;
   border-bottom: 1px dashed;
   padding: 5px;
-  border-color: #ffc0cb !important;
+  border-color: #ffc600 !important;
 }
 .post-content h2 {
   font-size: 1.1em;
