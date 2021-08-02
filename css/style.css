@@ -37,7 +37,7 @@ a:hover {
 /* 滚动槽 */
 ::-webkit-scrollbar-track {
 /* -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5); */
-  background-color: #000;
+  background-color: #2a2a2a;
 }
 /* 滚动条滑块 */
 ::-webkit-scrollbar-thumb {
