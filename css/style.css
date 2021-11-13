@@ -76,15 +76,24 @@ a:hover {
   margin: 0 auto;
   max-width: 1500px;
 }
+.header .mobile-box {
+  overflow: inherit;
+  display: none;
+  margin: 0 auto;
+  max-width: 1500px;
+}
 .header .tipsbox .blog-title {
   float: left;
-  margin: 12px auto;
+  margin: 12px 12px 12px 12px;
+}
+.header .mobile-box,
+.header .blog-title {
+  text-align: center;
 }
 .header .blog-title a {
-  margin-left: 20px;
   text-decoration: none;
 }
-.header .tipsbox nav.main-nav {
+.header nav.main-nav {
   margin: 0 auto;
 }
 .header header,
@@ -94,7 +103,7 @@ a:hover {
 .header nav {
   height: inherit;
 }
-.header .tipsbox nav.main-nav ul {
+.header nav.main-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0 15px;
@@ -103,7 +112,7 @@ a:hover {
   position: relative;
   justify-content: flex-end;
 }
-.header .tipsbox nav.main-nav ul a li {
+.header nav.main-nav ul a li {
   color: #fff;
   display: block;
   font-size: 0.9rem;
@@ -113,8 +122,22 @@ a:hover {
   max-height: 50px;
   transition: all 0.2s ease;
 }
-.header .tipsbox nav.main-nav ul a li:hover {
+.header nav.main-nav ul a li:hover {
   background-color: #ffb600;
+}
+@media only screen and (max-width: 900px) {
+  .header {
+    height: auto;
+  }
+  .header .tipsbox {
+    display: none;
+  }
+  .header .mobile-box {
+    display: block;
+  }
+  .header nav.main-nav ul {
+    justify-content: center;
+  }
 }
 .win-top {
   width: 100%;
@@ -181,6 +204,9 @@ a:hover {
   padding: 0.5em 0.42890625rem;
   min-height: 230px;
 }
+.peizhi {
+  float: left;
+}
 .main-aboutgame {
   width: 100%;
   float: left;
@@ -198,6 +224,10 @@ a:hover {
   #img-1,
   #img-3 {
     display: none;
+  }
+  .peizhi {
+    float: none;
+    text-align: center;
   }
 }
 #newsBox a {
@@ -291,7 +321,7 @@ dd {
   background: rgba(255,255,255,0);
   padding: 3px;
   border-radius: 20px;
-  color: rgba(255,255,255,0);
+  color: rgba(255,255,255,0.5);
   transition: all 0.3s ease;
 }
 .vdo-zhezhao:hover {
