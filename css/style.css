@@ -338,7 +338,7 @@ dd {
   transition: all 0.3s ease;
 }
 .vdo-zhezhao:hover {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.5);
   color: #fff;
 }
 .video {
